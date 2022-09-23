@@ -1,0 +1,1 @@
+var PortfolioSnapshotComments = {}; PortfolioSnapshotComments.initPage = function() {}
