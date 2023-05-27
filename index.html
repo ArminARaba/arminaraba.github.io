@@ -1,51 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual Motorsport Racing League</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <!-- Link the CSS file here -->
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Kezdőlap</a></li>
-                <li><a href="#">Versenynaptár</a></li>
-                <li><a href="#">Ponttáblázat</a></li>
-                <li><a href="#">Csapatok</a></li>
-                <li><a href="#">Versenyzők</a></li>
-                <li><a href="#">Közösségi média</a></li>
-                <li><a href="#">Kapcsolat</a></li>
-                <li><a href="#">Szabályzat</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Menu -->
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="calendar.html">Versenynaptár</a></li>
+            <li><a href="standings.html">Ponttáblázat</a></li>
+            <li><a href="teams.html">Csapatok</a></li>
+            <li><a href="drivers.html">Versenyzők</a></li>
+            <li><a href="forum.html">Fórum</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
+            <li><a href="rules.html">Szabályzat</a></li>
+        </ul>
+    </div>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Virtual Motorsport Racing League</h1>
-            <p>Az online autósport legizgalmasabb ligája</p>
-            <a href="#" class="cta-button">Regisztráció</a>
-        </div>
-    </section>
+    <!-- Registration and login -->
+    <div id="registration-login">
+        <h2>Regisztráció és bejelentkezés</h2>
+        <p>Ha szeretnél részt venni a ligában, akkor regisztrálnod kell egy fiókot. Ha már rendelkezel fiókkal, akkor be tudsz jelentkezni a lenti űrlap segítségével.</p>
+        <form id="registration-form" action="register.php" method="POST">
+            <h3>Regisztráció</h3>
+            <label for="username">Felhasználónév:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Jelszó:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm-password">Jelszó megerősítése:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <label for="role">Szerep:</label>
+            <select id="role" name="role" required>
+                <option value="">Válassz egy szerepet</option>
+                <option value="driver">Versenyző</option>
+                <option value="team">Csapat</option>
+            </select>
+            <button type="submit" id="register-button">Regisztrálok</button>
+        </form>
 
-    <section class="content">
-        <h2>Hírek</h2>
-        <div class="news-item">
-            <h3>Cím 1</h3>
-            <p>Leírás 1</p>
+        <form id="login-form" action="login.php" method="POST">
+            <h3>Bejelentkezés</h3>
+            <label for="username-login">Felhasználónév:</label>
+            <input type="text" id="username-login" name="username-login" required>
+            <label for="password-login">Jelszó:</label>
+            <input type="password" id="password-login" name="password-login" required>
+            <button type="submit" id="login-button">Bejelentkezek</button>
+        </form>
+
+    </div>
+
+    <!-- Races and results management -->
+    <div id="races-results">
+        <h2>Versenyek és eredmények kezelése</h2>
+        <p>Itt tudod kezelni a versenyeket és az eredményeket. Ha versenyszervező vagy adminisztrátor vagy, akkor tudsz új versenyeket létrehozni, eredményeket rögzíteni, frissíteni vagy módosítani. Ha résztvevő vagy, akkor itt tudod megtekinteni az eredményeket és a statisztikákat.</p>
+        <form id="race-form" action="race.php" method="POST">
+            <h3>Új verseny létrehozása</h3>
+            <label for="race-name">Verseny neve:</label>
+            <input type="text" id="race-name" name="race-name" required>
+            <label for="race-date">Verseny dátuma:</label>
+            <input type="date" id="race-date" name="race-date" required>
+            <label for="race-location">Verseny helyszíne:</label>
+            <input type="text" id="race-location" name="race-location" required>
+            <button type="submit" id="create-race-button">Verseny létrehozása</button>
+        </form>
+
+        <form id="result-form" action="result.php" method="POST">
+            <h3>Eredmény rögzítése</h3>
+            <label for="result-race">Verseny:</label>
+            <select id="result-race" name="result-race" required>
+                <!-- List the available races here -->
+            </select>
+            <label for="result-driver">Versenyző:</label>
+            <select id="result-driver" name="result-driver" required>
+                <!-- List the available drivers here -->
+            </select>
+            <label for="result-position">Helyezés:</label>
+            <input type="number" id="result-position" name="result-position" min="1" required>
+            <label for="result-points">Pontok:</label>
+            <input type="number" id="result-points" name="result-points" min="0" required>
+            <button type="submit" id="record-result-button">Eredmény rögzítése</button>
+        </form>
+
+        <table id="results-table">
+            <h3>Eredmények megtekintése</h3>
+            <thead>
+                <tr>
+                    <th>Verseny</th>
+                    <th>Versenyző</th>
+                    <th>Helyezés</th>
+                    <th>Pontok</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- List the results here -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- Communication and forum -->
+    <div id="communication-forum">
+        <h2>Kommunikáció és fórum</h2>
+        <p>Itt tudsz kommunikálni a többi versenyzővel vagy csapattal, megoszthatod a tapasztalataidat, taktikáidat vagy értesítheted őket fontos információkról. A fórumon különböző témákban tudsz hozzászólni vagy új témát indítani.</p>
+        <form id="forum-form" action="forum.php" method="POST">
+            <h3>Új téma indítása</h3>
+            <label for="forum-title">Téma címe:</label>
+            <input type="text" id="forum-title" name="forum-title" required>
+            <label for="forum-content">Téma tartalma:</label>
+            <textarea id="forum-content" name="forum-content" rows="10" cols="50" required></textarea>
+            <button type="submit" id="create-forum-button">Téma indítása</button>
+        </form>
+
+        <div id="forum-topics">
+            <h3>Témák megtekintése</h3>
+            <!-- List the forum topics here -->
         </div>
-        <div class="news-item">
-            <h3>Cím 2</h3>
-            <p>Leírás 2</p>
-        </div>
-    </section>
+
+    </div>
+
+    <!-- Updates and news -->
+    <div id="updates-news">
+        <h2>Frissítések és hírek</h2>
+        <p>Itt tudsz frissítéseket és híreket osztani meg a liga eseményeiről, eredményeiről vagy b+!
+    </div>
+<body>
 
     <footer>
-        <p>Virtual Motorsport Racing League &copy; 2023</p>
+        <p>&copy; ©2023 Virtual Motorsport Racing League. Minden jog fenntartva.</p>
     </footer>
 </body>
 </html>

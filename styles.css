@@ -1,40 +1,218 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
 }
 
-header {
-    background-color: #6e3f8f;
-    padding: 20px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 40px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.hero {
-    background-color: #c0ffc0;
-    padding: 100px;
+h1, h2, h3 {
     text-align: center;
-    color: #000;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Menu styles */
+#menu {
+    background-color: #333;
+}
+
+#menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#menu li {
+    padding: 10px 20px;
+}
+
+#menu li a {
+    color: #fff;
+}
+
+#menu li a:hover {
+    color: #ccc;
+}
+
+/* Registration and login styles */
+#registration-login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#registration-login form {
+    width: 40%;
+    margin: 20px auto;
+}
+
+#registration-login label {
+    display: block;
+    margin: 10px 0;
+}
+
+#registration-login input, #registration-login select {
+    width: 80%;
+    padding: 10px;
+}
+
+#registration-login button {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Races and results management styles */
+#races-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#races-results form {
+    width: 40%;
+    margin: 20px auto;
+}
+
+#races-results label {
+    display: block;
+    margin: 10px 0;
+}
+
+#races-results input, #races-results select {
+    width: 80%;
+    padding: 10px;
+}
+
+#races-results button {
+    display: block;
+    margin: 20px auto;
+}
+
+#results-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* Communication and forum styles */
+#communication-forum {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#communication-forum form {
+    width: 40%;
+    margin: 20px auto;
+}
+
+#communication-forum label {
+    display: block;
+    margin: 10px 0;
+}
+
+#communication-forum input, #communication-forum textarea {
+    width: 80%;
+    padding: 10px;
+}
+
+#communication-forum button {
+    display: block;
+    margin: 20px auto;
+}
+
+#forum-topics {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Updates and news styles */
+#updates-news {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Standings styles */
+#standings {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Drivers and teams styles */
+#drivers-teams {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Races and events styles */
+#races-events {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Social media links styles */
+#social-media-links {
+    background-color: #333;
+}
+
+#social-media-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#social-media-links li {
+    padding: 10px 20px;
+}
+
+#social-media-links li a {
+    color: #fff;
+}
+
+#social-media-links li a:hover {
+    color: #ccc;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #registration-login form, #races-results form, #communication-forum form {
+        width: 80%;
+    }
 }
