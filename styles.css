@@ -11,6 +11,8 @@
   animation: fadeInOut 15s ease-out forwards;
 }
 
+@use "fonts";
+
 @charset "UTF-8";
 /**
 * Eric Meyer's Reset CSS v2.0
@@ -44,14 +46,26 @@ footer, header, menu, nav, section, time {
 
 body {
   line-height: 1;
-  color: black;
-  background: white;
+  background: #000000; /* Updated background color to black */
+  font-family: 'f1-regular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+  float: none;
+  height: 70px;
+  margin: 52px auto 0;
+  min-height: 70px;
+  position: relative;
+  width: 952px;
 }
 
 a {
-  color: inherit;
+  color: #FFFFFF; /* Updated text color to white */
   text-decoration: none;
 }
+
 
 ol, ul {
   list-style: none;
@@ -150,13 +164,13 @@ html {
   font-size: 16px;
 }
 body {
-  color: #002d5f;
-  font-family: Formula1-Display, serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0;
-  text-decoration: none;
+  float: none;
+  height: 70px;
+  margin: 52px auto 0;
+  min-height: 70px;
+  position: relative;
+  width: 952px;
+  color: #FFFFFF; /* Updated text color */
 }
 body {
   float: none;
@@ -187,9 +201,8 @@ body {
   top: 0;
   width: 668px;
 
-  font-family: 'Racing Sans One', sans-serif; /* This font is similar to some fonts used in racing themes, 		including Formula 1. */
-  background-color: #rgba(0,255,0,1.00)!important;
-  color: #ffffff; /* A dark text color for better readability. */  
+  font-family: 'f1-regular';
+  background: #716e76;
   
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
@@ -210,15 +223,17 @@ body {
   float: left;
   margin: 0 0 0 15px;
   width: 179px;
-  color: #ffffff;
+  color: #FFFFFF; /* Updated text color to white */
   font-size: 25.34122px;
   font-weight: bold;
   line-height: 24px;
 }
+
 .text-2 {
   float: left;
   margin: 5px 0 0 21px;
   width: 631px;
+  color: #FFFFFF; /* Updated text color to white */
   font-weight: bold;
   line-height: 18px;
 }
