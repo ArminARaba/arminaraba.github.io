@@ -179,6 +179,7 @@ body {
   background-clip: padding-box; /*Will not allow bg color to leak outside borders*/
   margin-left: -476px;
 }
+
 .body {
   height: 70px;
   left: 50%;
@@ -187,7 +188,7 @@ body {
   width: 668px;
 
   font-family: 'Racing Sans One', sans-serif; /* This font is similar to some fonts used in racing themes, 		including Formula 1. */
-  background-color: #rgba(0,0,0,0)!important;
+  background-color: #rgba(0,255,0,1.00)!important;
   color: #ffffff; /* A dark text color for better readability. */  
   
   -moz-background-clip: padding;
