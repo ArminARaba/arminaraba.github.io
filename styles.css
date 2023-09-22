@@ -1,13 +1,12 @@
-@keyframes blink {
+@keyframes fadeInOut {
   0%, 100% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0;
+  }
+  11.76%, 88.24% { /* 2s to 17s of the total 17s duration is visible (15s visible duration) */
+    opacity: 1;
   }
 }
 
-.blink {
-  animation: blink 1s linear infinite;
-  animation-delay: 5s;
+.fade-in-out {
+  animation: fadeInOut 17s ease-out forwards;
 }
