@@ -2,11 +2,11 @@
   0%, 100% {
     opacity: 0;
   }
-  11.76%, 88.24% { /* 2s to 17s of the total 17s duration is visible (15s visible duration) */
+  30%, 50% { /* 2s to 17s of the total 17s duration is visible (15s visible duration) */
     opacity: 1;
   }
 }
 
 .fade-in-out {
-  animation: fadeInOut 17s ease-out forwards;
+  animation: fadeInOut 15s ease-out forwards;
 }
