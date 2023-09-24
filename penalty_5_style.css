@@ -24,6 +24,7 @@
   font-family: "f1-year";
   src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1YEAR/F1YEARRegular.woff2") format("woff2");
 }
+
 @charset "UTF-8";
 /**
 * Eric Meyer's Reset CSS v2.0
@@ -58,7 +59,7 @@ footer, header, menu, nav, section, time {
 body {
   line-height: 1;
   color: black;
-  background: #02ff0a; /* Updated background color to green*/
+  background: white;
 }
 
 a {
@@ -164,7 +165,7 @@ html {
 }
 body {
   color: #ffffff;
-  font-family: font-family: "f1-regular";
+  font-family: "f1-regular";
   font-size: 22px;
   font-style: normal;
   font-weight: normal;
