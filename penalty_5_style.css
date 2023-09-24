@@ -228,10 +228,9 @@ body {
 }
 .text-2 {
   float: left;
-  margin: 21px 0 0;
+  margin-bottom: 50px; /* Space below the element */
   font-weight: bold;
   width: 350px; /*Maximal width, including the name*/
-  line-height: 80px;
 }
 .line-2 {
   float: left;
