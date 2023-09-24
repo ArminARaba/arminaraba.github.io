@@ -56,19 +56,9 @@ footer, header, menu, nav, section, time {
 
 body {
   line-height: 1;
-  background: #02ff0a; /* Updated background color to black */
-  font-family: 'f1-regular';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0;
-  text-decoration: none;
-  float: none;
-  height: 70px;
-  margin: 52px auto 0;
-  min-height: 70px;
-  position: relative;
-  width: 952px;
+  background: #02ff0a; /* Updated background color to green*/
+  line-height: 1;
+  color: black;
 }
 
 a {
