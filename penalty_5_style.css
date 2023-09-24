@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* meyerweb css reset end */
+
+textarea:focus, input:focus {
+  outline: 0;
+}
+
+input {
+  border-width: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; /* ie 6/7 */
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+}
+sup {
+  font-size: 58.3%;
+  vertical-align: text-top;
+}
+sub {
+  font-size: 58.3%;
+  vertical-align: text-bottom;
+}
+.no-space-between-inline-blocks {
+  *letter-spacing: normal; /*reset IE < 8*/
+  letter-spacing: -0.31em; /*webkit*/
+  word-spacing: -0.43em; /*IE < 8 && gecko*/
+}
+/*restore spacing on inner elements*/
+.no-space-between-inline-blocks > * {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.displace {
+  left: -5000px;
+  position: absolute;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+}
+body {
+  color: #ffffff;
+  font-family: Formula1-Display, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+body {
+  float: none;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  width: 886px;
+}
+.penalty-5 {
+  position: relative;
+  z-index: 0;
+}
+.penalty-5 > * {
+  float: left;
+  margin: 0 -0.7px 0 0 !important;
+}
+.penalty-5 > *:last-child {
+  margin-right: 0 !important;
+}
+.heading {
+  position: relative;
+  z-index: 4;
+}
+.row {
+  min-height: 70px;
+  padding: 6px 11px;
+  position: relative;
+  width: 273px;
+  z-index: 3;
+  background: url(images/body1.png) no-repeat;
+}
+.fia-logo {
+  float: left;
+  margin: 12px 0 0;
+}
+.line {
+  float: left;
+  margin: 6px 0 0 11px;
+}
+.text {
+  float: left;
+  margin: 0 0 0 15px;
+  width: 150px;
+  font-size: 25.34122px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.row-3 {
+  min-height: 70px;
+  padding: 3px 7px 5px 19px;
+  position: relative;
+  width: 542px;
+  z-index: 2;
+  background: url(images/body2.png) no-repeat;
+}
+.text-2 {
+  float: left;
+  margin: 21px 0 0;
+  font-weight: bold;
+}
+.line-2 {
+  float: left;
+  margin: 10px 0 0 9px;
+}
+.col {
+  float: left;
+  margin: 0 0 0 33px;
+  position: relative;
+  width: 109px;
+}
+.text-3 {
+  position: relative;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+}
+.seconds {
+  margin: -1px 0 0;
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.003em;
+  text-align: center;
+}
