@@ -228,11 +228,8 @@ body {
 }
 .text-2 {
   float: left;
-  line-height: 2;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 21px 0 0;
   font-weight: bold;
-  width: 350px; /*Maximal width, including the name*/
 }
 .line-2 {
   float: left;
