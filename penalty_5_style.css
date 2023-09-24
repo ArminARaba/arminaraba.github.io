@@ -231,7 +231,7 @@ body {
   margin: 21px 0 0;
   font-weight: bold;
   width: 350px; /*Maximal width, including the name*/
-  line-height: 1.6;
+  line-height: 2.4;
 }
 .line-2 {
   float: left;
