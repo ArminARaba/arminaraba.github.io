@@ -59,7 +59,7 @@ footer, header, menu, nav, section, time {
 body {
   line-height: 1;
   color: black;
-  background: white;
+  background: #02ff0a; /* Updated background color to "greenscreen" */
 }
 
 a {
