@@ -23,12 +23,6 @@ time, mark, audio, video, input, textarea {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section, time {
-  display: block;
-}
-
 @font-face {
   font-family: "f1-regular";
   src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.woff2") format("woff2");
@@ -54,10 +48,16 @@ footer, header, menu, nav, section, time {
   src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1YEAR/F1YEARRegular.woff2") format("woff2");
 }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+  display: block;
+}
+
 body {
   line-height: 1;
   color: black;
-  background: ##00ff00; /*GREENSCREEN COLOR*/
+  background: ##00ff00; /*GRENSCREEN COLOR*/
 }
 
 a {
@@ -163,7 +163,7 @@ html {
 }
 body {
   color: #ffffff;
-  font-family: f1-regular;
+  font-family: "f1-regular";
   font-size: 20px;
   font-style: normal;
   font-weight: normal;
@@ -183,11 +183,11 @@ body {
   position: relative;
   width: 886px;
 }
-.body-holder {
+.body1-holder {
   left: 50%;
   margin: 0 0 0 -371px;
   min-height: 70px;
-  padding: 23px 0 25px;
+  padding: 24px 0;
   position: absolute;
   top: 0;
   width: 814px;
@@ -198,7 +198,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.flag {
+.heading {
   left: 50%;
   position: absolute;
   top: 0;
