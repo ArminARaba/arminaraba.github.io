@@ -220,6 +220,7 @@ body {
   float: left;
 }
 .text {
+  font-family: "f1-regular";
   float: left;
   margin: 0 0 0 15px;
   width: 179px;
