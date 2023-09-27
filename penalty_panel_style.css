@@ -231,7 +231,7 @@ body {
   margin: 21px 0 0;
   font-weight: bold;
   display: flex;
-  margin-left: 350px;
+  padding: 100px;
 }
 .line-2 {
   float: left;
