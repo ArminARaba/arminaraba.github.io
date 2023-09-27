@@ -1,16 +1,14 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-    <title>VMRL FIA RACE CONTROL</title>
+<!doctype html>
+<html>
+  <head>
+    <title>Your site's title should be here</title>
     <meta charset="UTF-8">
     <meta name="description" content="Your site's description should be here">
     <meta name="keywords" content="Your site's keywords should be here">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="stylesheet" href="announcement_style.css">
+    <link rel="stylesheet" href="style.css"> 
     <!--[if IE 6]>
 	<style type="text/css">
 		* html .group {
@@ -28,17 +26,24 @@
     <!--[if lt IE 9]> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
   <![endif]--> 
-</head>
-<body>
-  <br>
-  <br>
-  <br>
-    <div class="heading"></div>
-    <div class="body"></div>
-    <div class="header group">
-      <img class="fia" src="images/fia.png" alt="" width="66" height="46">
-      <p class="text">RACE<br>CONTROL</p>
-      <p class="text-2">KUTYA YOU ARE UNDER INVESTIGATION FOR EATING TWO PEDIGRE BAGS </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/match-height.js"></script> 
+    <script>
+		$(function () {
+			$('.match-height-bootstrap-row > * > *').matchHeight();
+			$('.match-height > *').matchHeight();
+		})
+	</script>
+  </head>
+  <body>
+    <div class="announcement match-height group">
+      <div class="heading-holder group">
+        <img class="fia" src="images/fia.png" alt="" width="66" height="46">
+        <p class="text">RACE<br>CONTROL</p>
+      </div>
+      <div class="body-holder">
+        KUTYA YOU ARE UNDER INVESTIGATION FOR EATING TWO PEDIGRE BAGS 
+      </div>
     </div>
-</body>
+  </body>
 </html>
