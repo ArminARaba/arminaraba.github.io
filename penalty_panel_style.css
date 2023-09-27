@@ -59,7 +59,7 @@ footer, header, menu, nav, section, time {
 body {
   line-height: 1;
   color: black;
-  background: #02ff0a; /* Updated background color to "greenscreen" */
+  background: ##00ff00; /*GRENSCREEN COLOR*/
 }
 
 a {
@@ -211,6 +211,7 @@ body {
   margin: 6px 0 0 11px;
 }
 .text {
+  font-family: "f1-regular";
   float: left;
   margin: 0 0 0 15px;
   width: 150px;
