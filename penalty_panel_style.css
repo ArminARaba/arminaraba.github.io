@@ -230,6 +230,8 @@ body {
   float: left;
   margin: 21px 0 0;
   font-weight: bold;
+  display: flex;
+  left: 350px;
 }
 .line-2 {
   float: left;
