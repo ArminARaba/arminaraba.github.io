@@ -1,28 +1,3 @@
-@charset "UTF-8";
-/**
-* Eric Meyer's Reset CSS v2.0
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, input, textarea {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
 @font-face {
   font-family: "f1-regular";
   src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.woff2") format("woff2");
@@ -46,6 +21,31 @@ time, mark, audio, video, input, textarea {
 @font-face {
   font-family: "f1-year";
   src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1YEAR/F1YEARRegular.woff2") format("woff2");
+}
+
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -162,9 +162,9 @@ html {
   font-size: 16px;
 }
 body {
-  color: #002d5f;
+  color: #ffffff;
   font-family: "f1-regular";
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0;
@@ -177,36 +177,36 @@ body {
   position: relative;
   width: 886px;
 }
-.announcement {
+.red-flag {
+  height: 70px;
+  margin: 0 auto;
   position: relative;
+  width: 886px;
 }
-.heading-holder {
-  float: left;
+.body1-holder {
+  left: 50%;
+  margin: 0 0 0 -371px;
   min-height: 70px;
-  padding: 8px 0 4px;
-  position: relative;
-  width: 237px;
-  background: #002d5f;
-}
-.fia {
-  float: left;
-  margin: 4px 15px 0 6px;
-}
-.text {
-  color: #ffffff;
-  font-size: 25.34122px;
-  font-weight: bold;
-  line-height: 28px;
-}
-.body-holder {
-  float: left;
-  min-height: 70px;
-  padding: 16px 4px 17px 14px;
-  width: 649px;
+  padding: 24px 0;
+  position: absolute;
+  top: 0;
+  width: 814px;
   -webkit-border-radius: 0 0 9px;
   -moz-border-radius: 0 0 9px;
   border-radius: 0 0 9px;
-  background: #ededed;
+  background: #212227;
   font-weight: bold;
-  line-height: 18px;
+  text-align: center;
+}
+.heading {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: -443px;
+}
+.line {
+  left: 50%;
+  position: absolute;
+  top: 12px;
+  margin-left: -372px;
 }
