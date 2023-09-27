@@ -23,6 +23,12 @@ time, mark, audio, video, input, textarea {
   vertical-align: baseline;
 }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+  display: block;
+}
+
 @font-face {
   font-family: "f1-regular";
   src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1Regular/Formula1-Regular.woff2") format("woff2");
@@ -48,16 +54,10 @@ time, mark, audio, video, input, textarea {
   src: url("https://www.formula1.com/etc/designs/fom-website/fonts/F1YEAR/F1YEARRegular.woff2") format("woff2");
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section, time {
-  display: block;
-}
-
 body {
   line-height: 1;
   color: black;
-  background: ##00ff00; /*GRENSCREEN COLOR*/
+  background: ##00ff00; /*GREENSCREEN COLOR*/
 }
 
 a {
@@ -163,7 +163,7 @@ html {
 }
 body {
   color: #ffffff;
-  font-family: "f1-regular";
+  font-family: f1-regular;
   font-size: 20px;
   font-style: normal;
   font-weight: normal;
@@ -178,40 +178,35 @@ body {
   width: 886px;
 }
 .red-flag {
-  min-height: 70px;
+  height: 70px;
+  margin: 0 auto;
   position: relative;
   width: 886px;
-  background: url(images/body2.png) no-repeat 72px 0;
 }
-.wrapper {
-  float: left;
-  height: 70px;
-  margin: 0 25px 0 0;
-  position: relative;
-  width: 73px;
-}
-.heading-holder {
+.body-holder {
   left: 50%;
-  padding: 22px 0 19px;
+  margin: 0 0 0 -371px;
+  min-height: 70px;
+  padding: 23px 0 25px;
   position: absolute;
   top: 0;
-  width: 72px;
-  background: url(images/heading.png) no-repeat;
-  margin-left: -36.5px;
+  width: 814px;
+  -webkit-border-radius: 0 0 9px;
+  -moz-border-radius: 0 0 9px;
+  border-radius: 0 0 9px;
+  background: #212227;
+  font-weight: bold;
+  text-align: center;
 }
 .flag {
-  display: block;
-  margin: 0 auto;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: -443px;
 }
 .line {
   left: 50%;
   position: absolute;
   top: 12px;
-  margin-left: 34.5px;
-}
-.text {
-  float: left;
-  margin: 23px 0 0;
-  width: 771px;
-  font-weight: bold;
+  margin-left: -372px;
 }
