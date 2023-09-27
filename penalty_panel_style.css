@@ -229,8 +229,8 @@ body {
 .text-2 {
   float: left;
   font-weight: bold;
-  display: inline-block;
-  margin-left: 350;
+  display: flex;
+  margin-left: 400px;
 }
 .line-2 {
   float: left;
